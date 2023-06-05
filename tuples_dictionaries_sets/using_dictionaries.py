@@ -32,8 +32,10 @@ winner_scores = {
   "second": ("Jess", 47)
 }
 
-for winner in winner_scores:
-  print(winner_scores[winner])
+#for winner in winner_scores:
+#  print(winner_scores[winner])
+winner_scores.pop("second")
+print(winner_scores)
 """
 """
 participants = {
@@ -65,16 +67,17 @@ air = {
 
 print(air["oxygen"])
 """
-"""
+
 participants = {
   "Meg": True,
   "Kim": False,
   "Luis": True,
   "Luis M.": False
 }
-
-meg = participants["Meg"]
-print(meg)
+"""
+#meg = participants["Meg"]
+kim = participants.pop("Kim")
+print(kim)
 """
 """
 contents = {
@@ -95,6 +98,7 @@ toppings = {
 
 toppings["extra cheese"] = True
 """
+"""
 toppings = {
   "olives": True,
   "anchovies": False,
@@ -103,3 +107,49 @@ toppings = {
 
 toppings["olives"] = False
 print(toppings)
+"""
+"""
+stock = {
+    "dresses": 25,
+    "t-shirts": 50,
+    "jeans": 1
+}
+
+#stock.pop("caps")
+#jeans_stock = stock.pop("jeans")
+#print(jeans_stock)
+if "jeans" in stock:
+    stock.pop("jeans")
+print(stock)
+"""
+"""
+routine = {
+    "squats": 40,
+    "push-ups": 20,
+    "lunges": 30
+}
+
+routine.pop("lunges")
+print(routine)
+"""
+
+cast = {
+    "Chief": "Bryan Cranston",
+    "Nutmeg": "Scarlet Johansson",
+    "Rex": "Edward Norton"
+}
+
+if "Oracle" in cast:
+  cast.pop("Oracle")
+print(cast)
+
+"""
+scoops = {
+    "vanilla": 1,
+    "chocolate": 2,
+    "hazelnut": 3
+}
+
+vanilla = scoops.pop("vanilla")
+print(vanilla)
+"""
