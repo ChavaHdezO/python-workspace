@@ -13,3 +13,8 @@ if actualPass == enteredPass:
   print("Login successful")
 else:
   print("Incorrect credentials. Please try again")
+
+"""
+if variable == 'fortnite': # if syntax with equality operator
+elif variable >= 20: # elif syntax with greater than or equal to operator
+"""
