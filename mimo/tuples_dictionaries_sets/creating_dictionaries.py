@@ -1,10 +1,12 @@
 """
-locations = {
+locations_list = ["New York", "Paris"]
+# We can store as many as we want pairs inside a dictionary
+locations_dict = { # key can be numbers, booleans or tuples too; value can be type, including list
     "headquarters": "New York",
     "flagship": "Paris"
 }
 
-print(locations)
+print(locations_dict)
 """
 """
 car_data = {

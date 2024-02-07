@@ -1,11 +1,13 @@
+# We need dictionaries to associate each value of a collection with a meaningful "label", instead of an index
 """
-actor_bio = {
+# Using Dictionaries - Accesing and Updating Values
+actor_bio = { # A dictionary
  "name": "Bill Murray",
  "known for": ["Lost in Translation", "Rushmore"]
 }
 
 actor_name = actor_bio["name"]
-print(actor_name)
+print(actor_name) # Printing the value of the stored selected key
 """
 """
 player_scores = {
@@ -18,11 +20,12 @@ for player in player_scores:
   print(player_scores[player])
 """
 """
-ticket = {
+ticket = { # A dictionary with two key-value pairs
  "seat no.": 25,
  "first class": False
 }
 
+ticket["window"] = True # Adding a key-value pair to the dictionary
 ticket["first class"] = True
 print(ticket)
 """
@@ -80,11 +83,14 @@ kim = participants.pop("Kim")
 print(kim)
 """
 """
-contents = {
+# Adding a key-value pair
+contents = { # A dictionary with three key-value pairs
   "ch. 1": "A long-expected party",
   "ch. 2": "The shadow of the past",
   "ch. 3": "Three is company"
 }
+
+contents["ch. 4"] = "A short cut to mushrooms" # Adding a key-value pair to the dictionary
 
 for chapter in contents:
   print(contents[chapter])
@@ -153,3 +159,14 @@ scoops = {
 vanilla = scoops.pop("vanilla")
 print(vanilla)
 """
+product = {"category": "book", "price": 4.99, "in shop": True} # We can use this instruction to delete a key:value element inside a dictionary
+del product["in shop"]
+
+# Checking if a dictionary contains a key
+personal_data = {"name": "Mac Miller", "telephone": "0047865791"} # A dictionary
+print("name" in personal_data) # To check if a dictionary contains a certain key
+
+# Removing a key-value pair
+stock = {"dresses": 25, "t-shirts": 50, "jeans": 1} # A dictionary
+if "jeans" in stock: # Good practice to check first if the key exist
+  stock.pop("jeans") # Removing the key-value pair

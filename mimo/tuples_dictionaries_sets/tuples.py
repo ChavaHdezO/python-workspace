@@ -10,7 +10,16 @@ for user_score in scores:
     print(f"Result: {user_score}") # We can use any kind of loops to loop over a list of tuples
 event_tuple = ("Saturday", "21:00", "Anna’s Bday")
 print(event_tuple[1]) # We can access a tuple value by their index
+
 def get_scores_data(scores_list): # Tuples allows us to return multiple values from a list
     highest_score = max(scores_list)
     lowest_score = min(scores_list)
     return highest_score, lowest_score
+# To store a tuple returned by a function, we assign the functions call result to a variable like data
+scores = [31, 17, 80]
+data = get_scores_data(scores)
+print(data)
+highest = data[0]
+smallest = data[1]
+print(f"smallest score: {smallest}")
+print(f"highest score: {highest}")
