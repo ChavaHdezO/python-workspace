@@ -1,2 +1,2 @@
 Use object-oriented programming for sophisticated apps
-Línea agragada en Windows 10.
+Línea agregada en Windows 10 y modificada en Linux.
