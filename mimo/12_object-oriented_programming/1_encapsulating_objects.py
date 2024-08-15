@@ -51,3 +51,68 @@ rocky = Virtual_Pet("brown", "rocky")
 print(rocky.color)
 print(rocky.name)
 # -----------------------------------------------------------------------------
+# In OOP, we group together related data and functions in the same object. We call this encapsulation.
+
+class Dog:
+    name = 'Fido'
+    hungry = False
+
+    def eat(self):
+        self.hungry = True
+# -----------------------------------------------------------------------------
+# In FP, code is not encapsulated. Can you explain why this code does not show encapsulation?
+
+# The data and the function are not grouped together in an object.
+# -----------------------------------------------------------------------------
+# We can spot code that isn't well encapsulated
+# if related methods and properties are in different objects.
+# How can we encapsulate this code?
+
+class Dog:
+    hungry = True
+
+def eat():
+    hungry = False
+
+# Move eat() inside the Dog class.
+# -----------------------------------------------------------------------------
+# In OOP, we identify which methods and properties belong together and should be added to our objects.
+
+class Cat:
+    color = 'orange'
+
+    def meow(self):
+        print('Meow')
+
+class Car:
+    color = "gray"
+
+    def drive(self):
+        print("accelerating...")
+
+# -----------------------------------------------------------------------------
+# With encapsulation, we also have methods that use the other properties that belong to the object,
+# like in this example eat accesses hungry.
+
+class Dog:
+    name = 'Fido'
+    hungry = True
+
+    def eat(self):
+        self.hungry = False
+
+# -----------------------------------------------------------------------------
+# What is encapsulation?
+
+# Grouping related data and functions in the same object.
+# -----------------------------------------------------------------------------
+# Is this code encapsulated?
+
+class Car:
+    color = 'red'
+    on = False
+    def start(self):
+        self.on = True
+
+# Yes
+# -----------------------------------------------------------------------------
